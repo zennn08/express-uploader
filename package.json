@@ -1,0 +1,36 @@
+{
+  "name": "rest-api-replit",
+  "version": "1.0.0",
+  "description": "",
+  "exports": "./app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zennn08/rest-api-replit.git"
+  },
+  "keywords": [
+    "rest-api"
+  ],
+  "author": "aqulzz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zennn08/rest-api-replit/issues"
+  },
+  "homepage": "https://github.com/zennn08/rest-api-replit#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cheerio": "^1.0.0-rc.10",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "node-fetch": "^3.0.0",
+    "path": "^0.12.7"
+  }
+}
