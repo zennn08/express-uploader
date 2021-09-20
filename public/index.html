@@ -9,10 +9,24 @@
 </head>
 
 <body>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        Select image to upload:
-        <input type="file" name="file" id="file">
-        <input type="submit" value="Upload Image" name="submit">
+    <h1>Single Upload by Aqulzz</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div>
+            <label>Select File :</label><br>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <button style="margin-top: 1rem">Upload</button>
+    </form>
+    <br>
+    <h2>Multi Upload by Aqulzz</h2>
+    <form action="/multi-upload" method="POST" enctype="multipart/form-data">
+        <div>
+            <label>Pilih gambar</label> <br>
+            <input type="file" name="files" multiple>
+        </div>
+
+        <button style="margin-top: 1rem">Upload</button>
     </form>
 </body>
 

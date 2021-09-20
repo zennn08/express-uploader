@@ -65,12 +65,34 @@ app.post('/upload', upload.single('file'), (req, res) => {
             encoding: req.file.encoding,
             mimetype: req.file.mimetype,
             size: req.file.size,
-            url: "http://" + req.hostname + "/file/" + req.file.filename
+            url: "https://" + req.hostname + "/file/" + req.file.filename
         }
     })
 }, (error, req, res, next) => {
     res.status(400).json({
         error: error.message
+    })
+})
+
+app.post('/multi-upload', upload.array('files', 10), (req, res) => {
+    if (!req.files) return res.status(400).json({
+        status: false,
+        message: "No file uploaded"
+    })
+    const result = []
+    req.files.forEach(v => {
+        result.push({
+            originalname: v.originalname,
+            encoding: v.encoding,
+            mimetype: v.mimetype,
+            size: v.size,
+            url: "https://" + req.hostname + "/file/" + v.filename
+        })
+    });
+    res.status(200).json({
+        status: true,
+        message: "Created by aqulzz",
+        result: result
     })
 })
 

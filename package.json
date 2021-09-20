@@ -1,5 +1,5 @@
 {
-  "name": "rest-api-replit",
+  "name": "express-uploader",
   "version": "1.0.0",
   "description": "",
   "exports": "./app.js",
@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zennn08/rest-api-replit.git"
+    "url": "git+https://github.com/zennn08/express-uploader.git"
   },
   "keywords": [
-    "rest-api"
+    "express-uploader"
   ],
   "author": "aqulzz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zennn08/rest-api-replit/issues"
+    "url": "https://github.com/zennn08/express-uploader/issues"
   },
-  "homepage": "https://github.com/zennn08/rest-api-replit#readme",
+  "homepage": "https://github.com/zennn08/express-uploader#readme",
   "dependencies": {
     "axios": "^0.21.4",
     "cheerio": "^1.0.0-rc.10",
@@ -30,7 +30,6 @@
     "form-data": "^4.0.0",
     "morgan": "^1.10.0",
     "multer": "^1.4.3",
-    "node-fetch": "^3.0.0",
     "path": "^0.12.7"
   }
 }
