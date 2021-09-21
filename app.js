@@ -4,9 +4,13 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import multer from 'multer';
 import path from 'path';
+import fs from 'fs';
 
 const app = express()
 const port = 8000
+
+// Cretae folder
+if (!fs.existsSync('./public/file')) fs.mkdirSync('./public/file')
 
 function makeid(length) {
     let result = '';
